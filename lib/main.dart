@@ -29,9 +29,14 @@ class _StoryPageState extends State<StoryPage> {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          //TODO: Step 1 - Add background.png to this Container as a background image.
           constraints: BoxConstraints.expand(),
           padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 15.0),
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage('images/background.png'),
+            ),
+          ),
           child: SafeArea(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
